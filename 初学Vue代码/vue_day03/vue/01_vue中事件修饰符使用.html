@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>01_vue中事件修饰符使用</title>
+		<style type="text/css">
+			.aa{
+				background: red;
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			
+			<!-- 3.self事件修饰符：只触发标签自身的事件 -->
+			<div class="aa" @click.self="divClick">
+				<!-- 1.stop事件修饰符：用来阻止事件冒泡 -->
+				<input type="button" value="按钮" @click.stop="btnClick" />
+				
+				<input type="button" value="按钮1" @click="btnClick1" />
+				<input type="button" value="按钮2" @click="btnClick2" />
+				<input type="button" value="按钮3" @click="btnClick3" />
+			</div>
+			
+			<hr>
+			<!-- 2.prevent事件修饰符：用来阻止事件的默认行为 -->
+			<a href="https://blog.csdn.net/XING_Gou?spm=1000.2115.3001.5343" @click.prevent="aclick">csdn</a>
+			
+			<br>
+			<!-- 4.once事件修饰符：用来只执行一次特定的事件 -->
+			<a href="https://www.oschina.net/" @click.prevent.once="oclick">oschina</a>
+		</div>
+	</body>
+	<!-- vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		const app = new Vue({
+			el:"#app",
+			data:{
+				
+			},
+			methods:{
+				btnClick(){
+					alert("按钮被点击了")
+				},
+				divClick(){
+					alert("div被点击了")
+				},
+				aclick(){
+					alert("csdn被点击了")
+				},
+				btnClick1(){
+					alert("btn1被点击了")
+				},
+				oclick(){
+					alert("oschina被点击了")
+				}
+			}
+		});
+	</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vue的第一个入门案例</title>
+	</head>
+	<body>
+		
+		<div id="app">
+			<span>{{message}}</span>
+			<br>
+			<span v-text="message"></span>
+			
+			<br>
+			<span v-html="message">看不见的无效字！</span>
+		</div>
+		
+	</body>
+	<!-- 引入vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		const app = new Vue({
+			el:"#app",
+			data:{
+				message:"<a href=''>你点我啊！</a>"
+			},
+		});
+	</script>
+</html>

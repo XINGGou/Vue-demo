@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vue的v-bind使用</title>
+		
+		<style type="text/css">
+			.aa{
+				border: 2px red solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			
+<!-- 			<img v-bind:title="msg" v-bind:class="{aa:showCss}" v-bind:src="src"  style="width: 500px">
+			<input type="button" value="动态控制加入样式" @click="addCss"/>
+			<input type="button" value="改变图片" @click="changSrc"/> -->
+			
+			<!-- 
+				vue为了方便我们日后绑定标签的属性提供了对属性绑定的简化写法如 'v-bind:属性名' 简化之后 ':属性名'
+			 -->
+			<img :title="msg" :class="{aa:showCss}" :src="src" style="width: 500px">
+			<input type="button" value="动态控制加入样式" @click="addCss"/>
+			<input type="button" value="改变图片" @click="changSrc"/>
+		</div>
+		
+	</body>
+	<!-- 引入vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		
+		const app = new Vue({
+			el:"#app",
+			data:{
+				msg:"好大个烟锅巴哦！",
+				showCss:false,
+				src:"https://cdn.pixabay.com/photo/2021/01/20/16/15/goat-5934811_1280.jpg"
+			},
+			methods:{
+				addCss(){
+					this.showCss = !this.showCss;
+				},
+				changSrc(){
+					this.src = "http://pic.netbian.com/uploads/allimg/210129/205759-16119250792381.jpg";
+				}
+			}
+		});
+	</script>
+</html>

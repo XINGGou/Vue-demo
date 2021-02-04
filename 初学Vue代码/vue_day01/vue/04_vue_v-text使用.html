@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vue的第一个入门案例</title>
+	</head>
+	<body>
+		
+		<div id="app">
+			<!-- 1.{{}}(插值表达式)和V-text获取数据的区别
+					a.使用v-text取值会将标签中原有的数据覆盖，使用插值表达式的形式不会覆盖标签原有的数据
+					b.使用v-text可以避免在网络环境较差的情况下出现插值闪烁
+			 
+			 -->
+			 
+			<span>{{message}} 我期待你们的到来</span>
+			<br>
+			<span v-text="message+'!'"> 欸嘿，你们看不见我</span> 欸嘿，你们看不见我
+			
+		</div>
+		
+	</body>
+	<!-- 引入vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		const app = new Vue({
+			el:"#app",
+			data:{
+				message:"Mr.Xu欢迎谁哦！"
+			}
+		});
+	</script>
+</html>

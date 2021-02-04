@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>demo</title>
+	</head>
+	<body>
+		<div id="app">
+			
+			<span>{{msg}}</span><br>
+			<span>{{age == 23}}</span><br>
+			
+			<span>{{arr[0] + '市'}}</span><br>
+			<span>{{user.content}}</span><br>
+			<hr>
+			
+			<!-- v-text会覆盖原有数据 -->
+			<span v-text="msg">xixi</span>
+			<hr>
+			
+			<span v-text="message"></span><br>
+			<span v-html="message"></span>
+			
+		</div>
+		<!-- 
+			1.v-text v-html 指令 
+				v-text 相当于js innerTest
+				注意：指令里面不需要写插值表达式，直接书写对应数据变量名
+				v-html 相当于js中innerHTML
+		 -->
+	</body>
+	<!-- 引入vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		const app = new Vue({
+			el:"#app",
+			data:{
+				message:"<a href=''>Mr.Xu在打代码！</a>",
+				msg:"vue的第二天，我还在学习！",
+				age:23,
+				arr:["成都","大庆","宜宾"],
+				user:{name:"xiaopang",age:18,content:"他真的是小胖"}
+			},
+			methods:{}
+		});
+	</script>
+</html>
