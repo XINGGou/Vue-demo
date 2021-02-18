@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>01_全局组件的开发</title>
+	</head>
+	<body>
+		<div id="app">
+			
+			<!-- 使用群居组件 -->
+			<user-login></user-login>
+			
+		</div>
+	</body>
+	<!-- vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		//如果使用驼峰命名的方式'userLogin'，那么再使用时需以'<user-login></user-login>'
+		//全局组件注册 参数1：组件名称  参数2：组件配置对象 template：用来书写组件的html代码(注意：再template中有且只有一个root元素)
+		Vue.component('userLogin',{
+			template: '<div><h1>用户登录</h1></div>'
+		})
+		
+		const app = new Vue({
+			el:"#app",
+			data:{},
+			methods:{}
+		});
+	</script>
+</html>

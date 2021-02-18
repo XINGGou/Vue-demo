@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>04_vue中路由参数的传递</title>
+	</head>
+	<body>
+		<div id="app">
+			
+			<router-link to="/login" tag="button">登录</router-link>
+			<router-link to="/register" tag="button">注册</router-link>
+			
+			<!-- 显示路由 -->
+			<router-view></router-view>
+			
+		</div>
+	</body>
+	<!-- vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="../js/vue-router.js"></script>
+	<script>
+		
+		//声明组件模板
+		const login = {
+			template:'<h1>用户登录</h1>'
+		};
+		const register = {
+			template:'<h1>用户注册</h1>'
+		}
+		
+		//创建路由
+		const router = new VueRouter({
+			routes:[
+				{ path:'/',redirect:'/login' },
+				{ path:'/login',component:login },
+				{ path:'/register',component:register },
+			]
+		});
+		
+		const app = new Vue({
+			el:"#app",
+			data:{},
+			methods:{},
+			router //注册路由
+		});
+	</script>
+</html>
