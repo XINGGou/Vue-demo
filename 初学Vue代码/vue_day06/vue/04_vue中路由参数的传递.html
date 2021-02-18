@@ -7,8 +7,10 @@
 	<body>
 		<div id="app">
 			
-			<router-link to="/login" tag="button">登录</router-link>
-			<router-link to="/register" tag="button">注册</router-link>
+			<!-- 传统方式传参 -->
+			<router-link to="/login?id=21&name=Mr.Xu" tag="button">登录</router-link>
+			<!-- restful方式传参 -->
+			<router-link to="/register/24/张三" tag="button">注册</router-link>
 			
 			<!-- 显示路由 -->
 			<router-view></router-view>
@@ -22,10 +24,18 @@
 		
 		//声明组件模板
 		const login = {
-			template:'<h1>用户登录</h1>'
+			template:'<h1>用户登录 = {{this.$route.query.name}}</h1>',
+			data(){return {}},
+			methods:{},
+			created(){
+				console.log("===================>"+this.$route.query.id+"===========>"+this.$route.query.name);
+			}
 		};
 		const register = {
-			template:'<h1>用户注册</h1>'
+			template:'<h1>用户注册 = {{this.$route.params.name}}</h1>',
+			created(){
+				console.log("注册组件中id："+this.$route.params.id+"====>name"+this.$route.params.name);
+			}
 		}
 		
 		//创建路由
@@ -33,7 +43,7 @@
 			routes:[
 				{ path:'/',redirect:'/login' },
 				{ path:'/login',component:login },
-				{ path:'/register',component:register },
+				{ path:'/register/:id/:name',component:register },
 			]
 		});
 		
