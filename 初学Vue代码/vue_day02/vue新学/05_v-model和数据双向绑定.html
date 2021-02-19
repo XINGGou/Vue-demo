@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>05_model和数据双向绑定</title>
-	</head>
-	<body>
-		<div id="app">
-			
-			<input type="text" v-model="message"/>
-			
-			<span>{{message}}</span>
-			
-			<hr >
-			
-			<input type="button" value="改变Data的值" @click="changeValue" />
-			
-		</div>
-	</body>
-	<!-- vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script>
-		const app = new Vue({
-			el:"#app",
-			data:{
-				message:""
-			},
-			methods:{
-				changeValue(){
-					this.message = "Mr.Xu"
-				}
-			}
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>05_model和数据双向绑定</title>
+</head>
+<body>
+<div id="app">
+
+    <input type="text" v-model="message"/>
+
+    <span>{{message}}</span>
+
+    <hr>
+
+    <input type="button" value="改变Data的值" @click="changeValue"/>
+
+</div>
+</body>
+<!-- vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            message: ""
+        },
+        methods: {
+            changeValue() {
+                this.message = "Mr.Xu"
+            }
+        }
+    });
+</script>
 </html>

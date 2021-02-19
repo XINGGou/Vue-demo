@@ -59,6 +59,6 @@ public class ImageCodeUtils {
         ImageCodeUtils imageCodeUtils = new ImageCodeUtils();
         String number = imageCodeUtils.getNumber(3);
         System.out.println(number);
-        imageCodeUtils.getImage(new FileOutputStream("aa.jpg"),number);
+        imageCodeUtils.getImage(new FileOutputStream("aa.jpg"), number);
     }
 }

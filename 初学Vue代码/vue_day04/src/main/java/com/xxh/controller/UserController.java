@@ -34,7 +34,7 @@ public class UserController {
     public Map<String, Object> save(@RequestBody User user) {
         Map<String, Object> map = new HashMap<>();
         try {
-            if (StringUtils.isEmpty(user.getId())){
+            if (StringUtils.isEmpty(user.getId())) {
                 userService.save(user);
             } else {
                 userService.update(user);
@@ -73,8 +73,8 @@ public class UserController {
 
     //模糊搜索
     @GetMapping("/findLike")
-    public List<User> findNameOrCode(String name, String code){
-        return userService.findNameOrPhoneCode(name,code);
+    public List<User> findNameOrCode(String name, String code) {
+        return userService.findNameOrPhoneCode(name, code);
     }
 
 }

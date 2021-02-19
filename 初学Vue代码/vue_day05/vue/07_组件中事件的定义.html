@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>07_组件中事件的定义</title>
-	</head>
-	<body>
-		<div id="app">
-			
-			
-			<!-- 使用组件 -->
-			<login></login>
-		</div>
-	</body>
-	<!-- vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<!-- axios.min.js -->
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>
-		
-		const login = {
-			template:'<div><input type="button" value="点击触发事件" @click="change"><h1>{{name}}</h1></div>',
-			data(){
-				return{
-					name:'小陈'
-				}
-			},
-			methods:{
-				change(){
-					alert(this.name);
-					alert("触发事件");
-				}
-			}
-		}
-		
-		const app = new Vue({
-			el:"#app",
-			data:{},
-			methods:{},
-			components:{
-				login //注册组件
-			}
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>07_组件中事件的定义</title>
+</head>
+<body>
+<div id="app">
+
+
+    <!-- 使用组件 -->
+    <login></login>
+</div>
+</body>
+<!-- vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- axios.min.js -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+    const login = {
+        template: '<div><input type="button" value="点击触发事件" @click="change"><h1>{{name}}</h1></div>',
+        data() {
+            return {
+                name: '小陈'
+            }
+        },
+        methods: {
+            change() {
+                alert(this.name);
+                alert("触发事件");
+            }
+        }
+    }
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        components: {
+            login //注册组件
+        }
+    });
+</script>
 </html>

@@ -27,5 +27,5 @@ public interface UserService {
     void update(User user);
 
     //模糊搜索
-    List<User> findNameOrPhoneCode(String name,String code);
+    List<User> findNameOrPhoneCode(String name, String code);
 }

@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>vue事件练习</title>
-	</head>
-	<body>
-		<div id="app">
-			<input type="button" value="-" @click="minuscount"/>
-			<h3>{{ count }}</h3>
-			<input type="button" value="+" @click="addcount"/>
-		</div>
-	</body>
-	<!-- 引入vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script>
-		const app = new Vue({
-			el:"#app",
-			data:{
-				count:1
-			},
-			methods:{
-				minuscount(){
-					if(this.count>1){
-						this.count--;
-					}else{
-						alert("不能再减了哦！");
-					}
-				},
-				addcount(){
-					if(this.count<10){
-						this.count++;
-					}else{
-						alert("每个人不能超过10件！");
-					}
-				}
-			}
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>vue事件练习</title>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="-" @click="minuscount"/>
+    <h3>{{ count }}</h3>
+    <input type="button" value="+" @click="addcount"/>
+</div>
+</body>
+<!-- 引入vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            count: 1
+        },
+        methods: {
+            minuscount() {
+                if (this.count > 1) {
+                    this.count--;
+                } else {
+                    alert("不能再减了哦！");
+                }
+            },
+            addcount() {
+                if (this.count < 10) {
+                    this.count++;
+                } else {
+                    alert("每个人不能超过10件！");
+                }
+            }
+        }
+    });
+</script>
 </html>

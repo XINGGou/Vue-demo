@@ -19,7 +19,7 @@ public class TestUserDao {
     private UserDao userDao;
 
     @Test
-    public void testFindAll(){
-        userDao.findAll().forEach(user -> System.out.println("user = "+user));
+    public void testFindAll() {
+        userDao.findAll().forEach(user -> System.out.println("user = " + user));
     }
 }

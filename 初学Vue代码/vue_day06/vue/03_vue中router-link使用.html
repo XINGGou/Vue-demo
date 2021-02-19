@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>03_vue中router-link使用</title>
-	</head>
-	<body>
-		<div id="app">
-			
-<!-- 			<a href="#/login">登录</a>
-			<a href="#/register">注册</a> -->
-			
-			<!-- router-link 好处：书写路由路径不需要# to:用来书写路由路径 -->
-			<router-link to="/login" tag="button">登录</router-link>
-			<router-link to="/register" tag="button">注册</router-link>
-			
-			<!-- 路由显示 -->
-			<router-view></router-view>
-			
-		</div>
-	</body>
-	<!-- vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="../js/vue-router.js"></script>
-	<script>
-		
-		//声明组件模板
-		const login = {
-			template:"<h1>登录</h1>"
-		};
-		const register = {
-			template:"<h1>注册</h1>"
-		}
-		
-		//创建路由对象
-		const router = new VueRouter({
-			routes:[
-				// { path:'/',component:login },
-				{ path:'/',redirect:'/login' },  //默认路由
-				{ path:'/login',component:login },
-				{ path:'/register',component:register }
-			]
-		});
-		
-		
-		const app = new Vue({
-			el:"#app",
-			data:{},
-			methods:{},
-			router  //注册路由对象
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>03_vue中router-link使用</title>
+</head>
+<body>
+<div id="app">
+
+    <!-- 			<a href="#/login">登录</a>
+                <a href="#/register">注册</a> -->
+
+    <!-- router-link 好处：书写路由路径不需要# to:用来书写路由路径 -->
+    <router-link to="/login" tag="button">登录</router-link>
+    <router-link to="/register" tag="button">注册</router-link>
+
+    <!-- 路由显示 -->
+    <router-view></router-view>
+
+</div>
+</body>
+<!-- vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="../js/vue-router.js"></script>
+<script>
+
+    //声明组件模板
+    const login = {
+        template: "<h1>登录</h1>"
+    };
+    const register = {
+        template: "<h1>注册</h1>"
+    }
+
+    //创建路由对象
+    const router = new VueRouter({
+        routes: [
+            // { path:'/',component:login },
+            {path: '/', redirect: '/login'},  //默认路由
+            {path: '/login', component: login},
+            {path: '/register', component: register}
+        ]
+    });
+
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router  //注册路由对象
+    });
+</script>
 </html>

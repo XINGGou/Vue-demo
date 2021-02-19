@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Vue的v-show使用</title>
-	</head>
-	<body>
-		<div id="app">
-			<!-- 
-				v-show：用来控制标签展示还是隐藏
-			 -->
-			 <h3 v-show="false">你看得见不哦！</h3>
-			 
-			<h3 v-show="show">Mr.Xu是谁呢？</h3>
-			<input type="button" value="展示隐藏标签" @click="showmsg">
-			<br>
-			<h3>年龄：{{age}}</h3>
-			<h3 v-show="age>=30">哦豁，你看见我了，无语，哈哈哈！</h3>
-			<input type="button" value="通过修改age值控制标签展示" @click="changeAge">
-		</div>
-		
-	</body>
-	<!-- 引入vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script>
-		
-		const app = new Vue({
-			el:"#app",
-			data:{
-				show:false,
-				age:23
-			},
-			methods:{
-				//定义事件
-				showmsg(){
-					this.show = !this.show;
-				},
-				changeAge(){
-					this.age++;
-					console.log(this.age);
-				}
-			}
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>Vue的v-show使用</title>
+</head>
+<body>
+<div id="app">
+    <!--
+        v-show：用来控制标签展示还是隐藏
+     -->
+    <h3 v-show="false">你看得见不哦！</h3>
+
+    <h3 v-show="show">Mr.Xu是谁呢？</h3>
+    <input type="button" value="展示隐藏标签" @click="showmsg">
+    <br>
+    <h3>年龄：{{age}}</h3>
+    <h3 v-show="age>=30">哦豁，你看见我了，无语，哈哈哈！</h3>
+    <input type="button" value="通过修改age值控制标签展示" @click="changeAge">
+</div>
+
+</body>
+<!-- 引入vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    const app = new Vue({
+        el: "#app",
+        data: {
+            show: false,
+            age: 23
+        },
+        methods: {
+            //定义事件
+            showmsg() {
+                this.show = !this.show;
+            },
+            changeAge() {
+                this.age++;
+                console.log(this.age);
+            }
+        }
+    });
+</script>
 </html>

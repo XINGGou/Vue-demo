@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>02_vue中路由的使用</title>
-	</head>
-	<body>
-		<div id="app">
-			
-			<!-- 6.根据链接切换路由 -->
-			<a href="#/login">登录</a>
-			<a href="#/register">注册</a>
-			
-			<!-- 5.显示路由的组件 -->
-			<router-view></router-view>
-			
-		</div>
-	</body>
-	<!-- vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<!-- 1.引入路由 -->
-    <script src="../js/vue-router.js"></script>
-	<script>
-		
-		//2.声明组件模板
-		const login = {
-			template:'<h1>登录</h1>'
-		};
-		const register = {
-			template:'<h1>注册</h1>'
-		}
-		
-		//3.创建路由对象
-		const router = new VueRouter({
-			routes:[
-				{path:'/login',component:login},  //path：路由路径 component：路径对应的组件
-				{path:'/register',component:register}
-			]
-		});
-		
-		const app = new Vue({
-			el:"#app",
-			data:{},
-			methods:{},
-			router:router //4.设置路由对象
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>02_vue中路由的使用</title>
+</head>
+<body>
+<div id="app">
+
+    <!-- 6.根据链接切换路由 -->
+    <a href="#/login">登录</a>
+    <a href="#/register">注册</a>
+
+    <!-- 5.显示路由的组件 -->
+    <router-view></router-view>
+
+</div>
+</body>
+<!-- vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- 1.引入路由 -->
+<script src="../js/vue-router.js"></script>
+<script>
+
+    //2.声明组件模板
+    const login = {
+        template: '<h1>登录</h1>'
+    };
+    const register = {
+        template: '<h1>注册</h1>'
+    }
+
+    //3.创建路由对象
+    const router = new VueRouter({
+        routes: [
+            {path: '/login', component: login},  //path：路由路径 component：路径对应的组件
+            {path: '/register', component: register}
+        ]
+    });
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router: router //4.设置路由对象
+    });
+</script>
 </html>

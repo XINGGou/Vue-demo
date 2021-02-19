@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>05_vue中嵌套路由的使用</title>
-	</head>
-	<body>
-		<div id="app">
-			
-			<router-link to="/product">商品管理</router-link>
-			
-			<router-view></router-view>
-			
-		</div>
-		
-		<template id="product">
-			<div>
-				<h1>商品管理</h1>
-				<router-link to="/product/add">商品添加</router-link>
-				<router-link to="/product/edit">商品编辑</router-link>
-				
-				<router-view></router-view>
-			</div>
-		</template>
-	</body>
-	<!-- vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="../js/vue-router.js"></script>
-	<script>
-		
-		//声明组件模板
-		const product = {
-			template:'#product'
-		};
-		const add = {
-			template:'<h3>商品添加</h3>'
-		};
-		const edit = {
-			template:'<h3>商品编辑</h3>'
-		}
-		
-		//创建路由对象含嵌套路由
-		const router = new VueRouter({
-			routes:[
-				{ 
-					path:'/product',
-					component:product,
-					children:[
-						{ path:'add',component:add },
-						{ path:'edit',component:edit }
-					]
-				},
-			]
-		});
-		
-		const app = new Vue({
-			el:"#app",
-			data:{},
-			methods:{},
-			router  //定义路由对象
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>05_vue中嵌套路由的使用</title>
+</head>
+<body>
+<div id="app">
+
+    <router-link to="/product">商品管理</router-link>
+
+    <router-view></router-view>
+
+</div>
+
+<template id="product">
+    <div>
+        <h1>商品管理</h1>
+        <router-link to="/product/add">商品添加</router-link>
+        <router-link to="/product/edit">商品编辑</router-link>
+
+        <router-view></router-view>
+    </div>
+</template>
+</body>
+<!-- vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="../js/vue-router.js"></script>
+<script>
+
+    //声明组件模板
+    const product = {
+        template: '#product'
+    };
+    const add = {
+        template: '<h3>商品添加</h3>'
+    };
+    const edit = {
+        template: '<h3>商品编辑</h3>'
+    }
+
+    //创建路由对象含嵌套路由
+    const router = new VueRouter({
+        routes: [
+            {
+                path: '/product',
+                component: product,
+                children: [
+                    {path: 'add', component: add},
+                    {path: 'edit', component: edit}
+                ]
+            },
+        ]
+    });
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router  //定义路由对象
+    });
+</script>
 </html>

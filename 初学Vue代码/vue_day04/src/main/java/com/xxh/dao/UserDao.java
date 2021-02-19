@@ -27,5 +27,5 @@ public interface UserDao {
     void update(User user);
 
     //根据姓名或者电话进行模糊查询
-    List<User> findNameOrPhoneCode(@Param("name") String name,@Param("code") String phoneCode);
+    List<User> findNameOrPhoneCode(@Param("name") String name, @Param("code") String phoneCode);
 }

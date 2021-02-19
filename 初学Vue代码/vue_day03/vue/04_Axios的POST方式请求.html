@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>04_Axios的POST方式请求</title>
-	</head>
-	<body>
-		<div id="app">
-			
-		</div>
-	</body>
-	<!-- vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<!-- axios.min.js -->
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>
-		
-		//发送POST方式请求
-		axios.post("http://localhost:8989/user/save",{
-			username:"xiaohui",
-			age:23,
-			email:"xiaohui@163.com",
-			phone:18054632578
-		}).then(function(response){
-			console.log(response);
-		}).catch(function(err){
-			console.log(err);
-		})
-		
-		const app = new Vue({
-			el:"#app",
-			data:{
-				
-			},
-			methods:{
-				
-			}
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>04_Axios的POST方式请求</title>
+</head>
+<body>
+<div id="app">
+
+</div>
+</body>
+<!-- vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- axios.min.js -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+    //发送POST方式请求
+    axios.post("http://localhost:8989/user/save", {
+        username: "xiaohui",
+        age: 23,
+        email: "xiaohui@163.com",
+        phone: 18054632578
+    }).then(function (response) {
+        console.log(response);
+    }).catch(function (err) {
+        console.log(err);
+    })
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {}
+    });
+</script>
 </html>

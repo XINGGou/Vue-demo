@@ -52,6 +52,6 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional(propagation = Propagation.SUPPORTS)
     public List<User> findNameOrPhoneCode(String name, String code) {
-        return userDao.findNameOrPhoneCode(name,code);
+        return userDao.findNameOrPhoneCode(name, code);
     }
 }

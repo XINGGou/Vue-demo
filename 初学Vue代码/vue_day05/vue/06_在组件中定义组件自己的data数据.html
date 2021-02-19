@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>06_在组件中定义组件自己的data数据</title>
-	</head>
-	<body>
-		<div id="app">
-			
-			<!-- 组件的使用 -->
-			<login></login>
-			
-		</div>
-		
-	</body>
-	<!-- vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script>
-		
-		//组件声明的配置对象
-		const login = {
-			template:'<div><h1>{{msg}} Mr.Xu</h1><ul><li v-for="item,index in lists">{{index+1}} : {{item}}</li></ul></div>',
-			data(){  //使用data函数方式定义组件的数据  在template代码中通过插值表达式直接获取
-				return {
-					msg:"hello",
-					lists:['java','mysql','redis']
-				}//组件自己内部数据
-			}
-		}
-		
-		const app = new Vue({
-			el:"#app",
-			data:{},
-			methods:{},
-			components:{
-				login  //注册组件
-			}
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>06_在组件中定义组件自己的data数据</title>
+</head>
+<body>
+<div id="app">
+
+    <!-- 组件的使用 -->
+    <login></login>
+
+</div>
+
+</body>
+<!-- vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    //组件声明的配置对象
+    const login = {
+        template: '<div><h1>{{msg}} Mr.Xu</h1><ul><li v-for="item,index in lists">{{index+1}} : {{item}}</li></ul></div>',
+        data() {  //使用data函数方式定义组件的数据  在template代码中通过插值表达式直接获取
+            return {
+                msg: "hello",
+                lists: ['java', 'mysql', 'redis']
+            }//组件自己内部数据
+        }
+    }
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        components: {
+            login  //注册组件
+        }
+    });
+</script>
 </html>

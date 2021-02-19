@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>vue回顾事件</title>
-	</head>
-	<body>
-		<div id="app">
-			
-			<input type="button" value="点击触发事件" v-on:click="test('21','13','小黑')">
-			
-			<hr >
-			<input type="button" value="事件的简化写法" @click="test1" />
-			
-		</div>
-		<!-- 
-			1.事件三要素  事件源：html标签是谁   事件：特定动作 单机 双击..  事件处理程序：使用函数来完成
-			
-			2.vue中事件定义：
-				1.v-on 指令  用来给标签绑定事件
-				2.事件的参数传递
-				3.v-on 的简化写法  将v-on:click="" 简化为 @click=""
-		 -->
-	</body>
-	<!-- 引入vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script>
-		const app = new Vue({
-			el:"#app",
-			data:{
-				message:"hello，Mr.Xu！"
-			},
-			methods:{
-				// test:function(){
-				// 	alert("test click");
-				// }
-				test(id,age,name){
-					alert("test click");
-					console.log(id);
-					console.log(age);
-					console.log(name);
-					console.log(this.message);
-				},
-				test1(){
-					alert("test1测试 事件的简化写法");
-					console.log(this.message);
-				}
-			}
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>vue回顾事件</title>
+</head>
+<body>
+<div id="app">
+
+    <input type="button" value="点击触发事件" v-on:click="test('21','13','小黑')">
+
+    <hr>
+    <input type="button" value="事件的简化写法" @click="test1"/>
+
+</div>
+<!--
+    1.事件三要素  事件源：html标签是谁   事件：特定动作 单机 双击..  事件处理程序：使用函数来完成
+
+    2.vue中事件定义：
+        1.v-on 指令  用来给标签绑定事件
+        2.事件的参数传递
+        3.v-on 的简化写法  将v-on:click="" 简化为 @click=""
+ -->
+</body>
+<!-- 引入vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            message: "hello，Mr.Xu！"
+        },
+        methods: {
+            // test:function(){
+            // 	alert("test click");
+            // }
+            test(id, age, name) {
+                alert("test click");
+                console.log(id);
+                console.log(age);
+                console.log(name);
+                console.log(this.message);
+            },
+            test1() {
+                alert("test1测试 事件的简化写法");
+                console.log(this.message);
+            }
+        }
+    });
+</script>
 </html>

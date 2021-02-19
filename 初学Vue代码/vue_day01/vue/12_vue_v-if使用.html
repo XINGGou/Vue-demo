@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Vue的v-if使用</title>
-	</head>
-	<body>
-		<div id="app">
-			
-			 <h3 v-if="false">你看得见不哦！</h3>
-			 
-			 <h3 v-if="show">佛说，我们有缘！</h3>
-		</div>
-		
-	</body>
-	<!-- 引入vue.js -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script>
-		
-		const app = new Vue({
-			el:"#app",
-			data:{
-				show:false,
-				age:25
-			},
-			methods:{
-				
-			}
-		});
-	</script>
+<head>
+    <meta charset="utf-8">
+    <title>Vue的v-if使用</title>
+</head>
+<body>
+<div id="app">
+
+    <h3 v-if="false">你看得见不哦！</h3>
+
+    <h3 v-if="show">佛说，我们有缘！</h3>
+</div>
+
+</body>
+<!-- 引入vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    const app = new Vue({
+        el: "#app",
+        data: {
+            show: false,
+            age: 25
+        },
+        methods: {}
+    });
+</script>
 </html>
