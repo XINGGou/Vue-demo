@@ -19,68 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb1f36a-7331-4f36-826b-ab43f1a71f92" name="Default Changelist" comment="vue_day07-项目中路由和组件的应用">
-      <change beforePath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/ImageCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/ImageCodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/ValidateImageCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/ValidateImageCodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/controller/CityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sb/src/main/java/com/baizhi/sb/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/01_vue_helloworld.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/01_vue_helloworld.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/02_vue_data定义对象、数组、其他数据类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/02_vue_data定义对象、数组、其他数据类型.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/03_vue_在使用{{}}取值时书写表达式.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/03_vue_在使用{{}}取值时书写表达式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/04_vue_v-text使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/04_vue_v-text使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/05_vue_v-html使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/05_vue_v-html使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/06_vue_v-on事件使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/06_vue_v-on事件使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/07_vue_v-on事件简化语法.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/07_vue_v-on事件简化语法.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/08_vue_事件函数优化.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/08_vue_事件函数优化.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/09_vue_vue事件传递参数.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/09_vue_vue事件传递参数.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/10_vue_事件练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/10_vue_事件练习.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/11_vue_v-show使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/11_vue_v-show使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/12_vue_v-if使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/12_vue_v-if使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day01/vue/13_vue_v-bind使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day01/vue/13_vue_v-bind使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day02/vue复习/01_vue回顾.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day02/vue复习/01_vue回顾.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day02/vue复习/02_vue回顾事件.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day02/vue复习/02_vue回顾事件.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day02/vue复习/03_v-show v-if v-bind 指令的回顾.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day02/vue复习/03_v-show v-if v-bind 指令的回顾.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day02/vue新学/04_vue中v-for指令的使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day02/vue新学/04_vue中v-for指令的使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day02/vue新学/05_v-model和数据双向绑定.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day02/vue新学/05_v-model和数据双向绑定.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day02/vue新学/06_记事本的综合案例.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day02/vue新学/06_记事本的综合案例.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day03/vue/01_vue中事件修饰符使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day03/vue/01_vue中事件修饰符使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day03/vue/02_按键修饰符.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day03/vue/02_按键修饰符.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day03/vue/03_Axios的GET方式请求.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day03/vue/03_Axios的GET方式请求.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day03/vue/04_Axios的POST方式请求.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day03/vue/04_Axios的POST方式请求.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day03/vue/05_Axios的并发请求.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day03/vue/05_Axios的并发请求.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day03/vue/06_vue中结合Axios完成天气查询案例.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day03/vue/06_vue中结合Axios完成天气查询案例.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day03/vue/07_vue的生命周期函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day03/vue/07_vue的生命周期函数.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/java/com/xxh/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/java/com/xxh/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/java/com/xxh/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/java/com/xxh/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/java/com/xxh/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/java/com/xxh/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/java/com/xxh/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/java/com/xxh/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap-theme.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/webapp/bootvue/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/main/webapp/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/main/webapp/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day04/src/test/java/com/xxh/TestUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day04/src/test/java/com/xxh/TestUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/01_全局组件的开发.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/01_全局组件的开发.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/02_局部组件的开发.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/02_局部组件的开发.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/02_局部组件的开发02.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/02_局部组件的开发02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/03_在局部组件中使用prop接收静态数据.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/03_在局部组件中使用prop接收静态数据.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/04_在局部组件中使用prop接收动态数据.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/04_在局部组件中使用prop接收动态数据.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/05_在组件中定义组件自己的数据.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/05_在组件中定义组件自己的数据.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/06_在组件中定义组件自己的data数据.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/06_在组件中定义组件自己的data数据.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/07_组件中事件的定义.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/07_组件中事件的定义.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day05/vue/08_向组件中传递事件并调用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day05/vue/08_向组件中传递事件并调用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day06/vue/01_vue中组件的回顾.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day06/vue/01_vue中组件的回顾.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day06/vue/02_vue中路由的使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day06/vue/02_vue中路由的使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day06/vue/03_vue中router-link使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day06/vue/03_vue中router-link使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day06/vue/04_vue中路由参数的传递.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day06/vue/04_vue中路由参数的传递.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_day06/vue/05_vue中嵌套路由的使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_day06/vue/05_vue中嵌套路由的使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/01_使用vue开发简单页面.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/01_使用vue开发简单页面.html" afterDir="false" />
-    </list>
+    <list default="true" id="8eb1f36a-7331-4f36-826b-ab43f1a71f92" name="Default Changelist" comment="vue_day07-项目中路由和组件的应用" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,6 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613615653332</updated>
       <workItem from="1613615659321" duration="11471000" />
+      <workItem from="1613720888232" duration="827000" />
     </task>
     <task id="LOCAL-00001" summary="创建vue_day07">
       <created>1613616245650</created>
@@ -193,6 +133,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建vue_day07" />
@@ -200,10 +141,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="vue_day07-项目中路由和组件的应用" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1613615710311">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1613721710469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613615710311" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613721710469" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1613652008473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -244,9 +185,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1613628869076" />
-    <state x="178" y="73" key="new project wizard" timestamp="1613634017777">
+    <state x="178" y="73" key="new project wizard" timestamp="1613721723999">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1613634017777" />
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1613721723999" />
   </component>
 </project>
